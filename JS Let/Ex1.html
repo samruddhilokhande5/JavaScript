@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Redeclaring a Variable Using var</h2>
+    <p id="demo"></p>
+    <script>
+        var a = 32;
+        // Here a is 32
+        {
+            var a = 76;
+            // Here a is 76
+        }
+        // Here a is 76
+        document.getElementById("demo").innerHTML = a;
+    </script>
+</body>
+
+</html>
+
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Redeclaring a Variable Using let</h2>
+    <p id="demo1"></p>
+    <script>
+        let b = 22;
+        // Here b is 22
+        {
+            let b = 44;
+            // Here b is 44
+        }
+        // Here b is 44
+        document.getElementById("demo1").innerHTML = b;
+    </script>
+
+</body>
+
+</html>

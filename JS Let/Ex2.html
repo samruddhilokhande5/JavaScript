@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript Hoisting</h2>
+
+    <p>With <b>var</b>, you can use a variable before it is declared:</p>
+    <p id="demo"></p>
+    <script>
+        carName = "Audi";
+        var carName;
+        document.getElementById("demo").innerHTML = carName;
+    </script>
+</body>
+
+</html>
+
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript Hoisting</h2>
+    <p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+    <p id="demo1"></p>
+    <script>
+        try {
+        carName1 = "Fortuner";
+        let carName1;
+        }
+        catch (err) {
+        document.getElementById("demo1").innerHTML = err;
+        }
+    </script>
+</body>
+
+</html>
